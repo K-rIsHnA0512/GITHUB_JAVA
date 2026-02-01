@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>プロジェクト</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:linear-gradient(white,pink);
+        }
+
+        .container{
+            background:linear-gradient(#cc33ff,#ff33cc);
+            padding:30px;
+            width:350px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:black;
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:12px;
+        }
+
+        input, select, textarea{
+            padding:8px;
+            border-radius:5px;
+            border:1px solid black;
+            font-size:14px;
+        }
+
+        button{
+            padding:10px;
+            background:linear-gradient(#be13ca,#cc33ff);
+            color:white;
+            border:black;
+            border-radius:55px;
+            cursor:pointer;
+        }
+        button:hover{
+            color:black;
+            background:pink;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>プロジェクト提出フォーム</h2>
+
+    <form>
+        <label>学生の名前</label>
+        <input type="text" placeholder="名前を入力してください" required>
+
+        <label>メールアドレス</label>
+        <input type="email" placeholder="メールを入力してください" required>
+
+        <label>プロジェクトのタイトル</label>
+        <input type="text" placeholder="タイトルを入力してください">
+
+        <label>プロジェクトの種類</label>
+        <select required>
+            <option>-- 種類を選択 --</option>
+            <option>ウェブ開発</option>
+            <option>Pythonプロジェクト</option>
+            <option>データベースプロジェクト</option>
+            <option>C言語プロジェクト</option>
+            <option>機械学習プロジェクト</option>
+            <option>データ分析プロジェクト</option>
+        </select>
+
+        <label>プロジェクトの説明</label>
+        <textarea rows="4" placeholder="プロジェクトについて書いてください" required></textarea>
+
+        <button type="submit">提出する！！</button>
+    </form>
+</div>
+</body>
+</html>
