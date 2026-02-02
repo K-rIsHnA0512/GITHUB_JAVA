@@ -15,7 +15,17 @@ public class Arrays {
         
         // lets take input from the user
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter The Length Of The Array : ");
         int length=sc.nextInt();
         // first declare an Array 
-        int[] NewArray= new int[length];       
+        int[] NewArray= new int[length];    
+        // then lets enter some value in this Array
+        for (int i = 0; i <length; i++) {
+            System.out.println("Enter The Number For Index "+i+" : ");
+            NewArray[i]=sc.nextInt();
+        }
+        for(int i=0;i<length;i++){
+            System.out.println("The Element At Index"+i+" Is : "+NewArray[i]);
+        }
+        sc.close();
     }}
