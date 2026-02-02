@@ -27,5 +27,10 @@ public class Arrays {
         for(int i=0;i<length;i++){
             System.out.println("The Element At Index"+i+" Is : "+NewArray[i]);
         }
-        sc.close();
+        // to convert String into An char Array
+        String s = "hello";
+        char[] arr = s.toCharArray();
+        System.out.println(arr);
+        System.out.println(arr[0000000000000000000000]);
+
     }}
